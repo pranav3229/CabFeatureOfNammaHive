@@ -26,7 +26,7 @@ public class UserLogin implements ActionListener, Login {
         l1.add(l2);
         f.add(l1);
 
-        l3 = new JLabel("BITS ID : ");
+        l3 = new JLabel("Customer ID : ");
         l3.setBounds(120, 120, 150, 30);
         l3.setFont(new Font("Arial", Font.BOLD, 20));
         l1.add(l3);
@@ -86,7 +86,7 @@ public class UserLogin implements ActionListener, Login {
                 if (rs.next()) {
                     f.setVisible(false);
                     UserData currUser = new UserData(username1);
-                    Thread t1 = new Thread(new Student(currUser));
+                    Thread t1 = new Thread(new customer(currUser));
                     t1.start();
                 } else {
                     JOptionPane.showMessageDialog(null, "Invalid Login Details");

@@ -4,12 +4,12 @@ import javax.swing.*;
 import java.sql.*;
 import java.util.*;
 
-public class Student implements ActionListener, Runnable {
+public class customer implements ActionListener, Runnable {
     JFrame f;
     JButton b1, b2, b3, b4;
     UserData usr;
 
-    Student(UserData usr) {
+    customer(UserData usr) {
         this.usr = usr;
     }
 
@@ -28,7 +28,7 @@ public class Student implements ActionListener, Runnable {
                     new Proposed(this.usr);
                 } else {
                     JOptionPane.showMessageDialog(null, "No rides proposed yet");
-                    new Student(this.usr);
+                    new customer(this.usr);
                 }
             } catch (SQLException e) {
                 // TODO Auto-generated catch block
@@ -41,7 +41,7 @@ public class Student implements ActionListener, Runnable {
     public void run() {
         // TODO Auto-generated method stub
         this.usr = usr;
-        f = new JFrame("Student");
+        f = new JFrame("Customer");
         f.setBackground(Color.WHITE);
         f.setLayout(null);
 

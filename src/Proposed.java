@@ -164,7 +164,7 @@ public class Proposed implements ActionListener {
                 if (aa == 1) {
                     JOptionPane.showMessageDialog(null, "Ride Confirmed for you. Waiting for other members.");
                     f.setVisible(false);
-                    new Student(this.usr);
+                    new customer(this.usr);
                 } else {
                     JOptionPane.showMessageDialog(null, "Error.");
                     this.f.setVisible(false);
@@ -183,7 +183,7 @@ public class Proposed implements ActionListener {
                 if (aa == 1) {
                     JOptionPane.showMessageDialog(null, "Ride rejected.");
                     f.setVisible(false);
-                    new Student(this.usr);
+                    new customer(this.usr);
                 } else {
                     JOptionPane.showMessageDialog(null, "Error.");
                     this.f.setVisible(false);
@@ -194,7 +194,7 @@ public class Proposed implements ActionListener {
             }
         } else if (ae.getSource() == b3) {
             f.setVisible(false);
-            new Student(this.usr);
+            new customer(this.usr);
         }
     }
 }

@@ -16,7 +16,7 @@ public class UserSignUp implements ActionListener {
         f.setBackground(Color.white);
         f.setLayout(null);
 
-        l1 = new JLabel("BITS ID");
+        l1 = new JLabel("Customer ID");
         l1.setBounds(40, 20, 1000, 30);
         f.add(l1);
 

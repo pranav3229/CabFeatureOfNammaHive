@@ -2,16 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserData {
-    private String BITSID = "";
+    private String CustomerID = "";
     private String Name = "";
     private int PhoneNo = 0;
 
     public UserData(String Id) {
-        this.BITSID = Id;
+        this.CustomerID = Id;
     }
 
     public String getBITSID() {
-        return BITSID;
+        return CustomerID;
     }
 
     public String getName() {

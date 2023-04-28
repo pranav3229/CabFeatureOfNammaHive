@@ -79,7 +79,7 @@ public class Ride implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b1) {
             this.f.setVisible(false);
-            new Student(this.usr);
+            new customer(this.usr);
         } else if (e.getSource() == b2) {
             String bitsId = t1.getText();
             String date = t2.getText();
@@ -98,7 +98,7 @@ public class Ride implements ActionListener {
                     c1.stm.executeUpdate(q1);
                     JOptionPane.showMessageDialog(null, "Ride Requested");
                     f.setVisible(false);
-                    new Student(this.usr);
+                    new customer(this.usr);
                 }
             } catch (Exception ex) {
                 ex.printStackTrace();
